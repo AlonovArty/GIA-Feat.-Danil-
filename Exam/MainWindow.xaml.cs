@@ -14,6 +14,7 @@ namespace Exam
 {
     public partial class MainWindow : Window
     {
+        //
         public static Models.User User;
         public static MainWindow Main;
         public MainWindow()
