@@ -1,0 +1,18 @@
+<UserControl x:Class="Exam.Elements.OrderProduct"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Exam.Elements"
+             mc:Ignorable="d" 
+             d:DesignHeight="45" d:MinWidth="600">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Продукт" VerticalAlignment="Center"/>
+            <ComboBox x:Name="Products" DisplayMemberPath="Name" SelectedValuePath="Id" Height="25" Width="200"/>
+            <Label Content="Количество" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <TextBox x:Name="Quantity" Height="25" Width="100"/>
+        </StackPanel>
+            <Button Click="Delete" Height="25" Width="100" Content="Удалить" Margin="10" HorizontalAlignment="Right"/> 
+    </Grid>
+</UserControl>

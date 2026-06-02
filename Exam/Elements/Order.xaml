@@ -1,0 +1,21 @@
+<UserControl x:Class="Exam.Elements.Order"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Exam.Elements"
+             mc:Ignorable="d" 
+             d:MinHeight="100" d:DesignWidth="400">
+    <Grid>
+        <StackPanel>
+            <Label x:Name="Article" Content="Артикул заказа:"/>
+            <Label x:Name="Status" Content="Статус:"/>
+            <Label x:Name="PickupPoint" Content="Адрес пункта выдачи:"/>
+            <Label x:Name="OrderDate" Content="Дата заказа:"/>
+            
+        </StackPanel>
+        <Label x:Name="DeliveryDate" Content="Дата доставки:" HorizontalAlignment="Right" Margin="10" VerticalAlignment="Center" />
+        <Button Click="Delete" x:Name="DeleteBtn" Content="Удалить" Visibility="Hidden" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10,10,120,10"/>
+        <Button Click="Edit" x:Name="EditBtn" Content="Изменить" Visibility="Hidden" Height="25" Width="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10"/>
+    </Grid>
+</UserControl>
